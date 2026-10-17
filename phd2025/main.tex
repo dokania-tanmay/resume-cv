@@ -1,0 +1,1104 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[10pt,letterpaper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% modern themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[bottom = 0.70in,left = 0.75in,right = 0.75in,top = 0.65in]{geometry}
+
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+\usepackage{tabularx}
+
+\usepackage{import}
+\usepackage{comment}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    urlcolor=blue,
+    }
+\usepackage{multicol}
+\usepackage{tabto}
+\usepackage{xpatch}
+\makeatletter
+\xpatchcmd{\makehead}{\titlestyle{~|~\@title}}{\par\vskip1ex\titlestyle{\@title}}{}{}
+\makeatother
+\definecolor{mygray}{gray}{0.4}
+\newcommand\x{1}
+\newcommand\y{4}
+\newcommand\shorter{10}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% personal data
+
+\name{Tanmay}{Dokania}
+\title{
+\small{PhD Student, Robotics and ECE, Georgia Institute of Technology, Atlanta, US}}
+
+%\phone{+91-63761-38052}                   
+\email{tdokania3@gatech.edu}
+% Can add linkedin? Or personal page?
+\extrainfo{\link[dokania-tanmay.github.io]{https://dokania-tanmay.github.io/}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+
+\begin{document}
+
+
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+
+\makecvhead
+\vspace{-0.75cm}
+%\small{Engenheiro de Informação (Telecomunicações) pela Universidade Federal do ABC, formado Bacharel em Ciência e Tecnologia pela mesma Universidade, em busca de oportunidade que abranja atuação em telecomunicações e sistemas de transmissão de dados, possuo conhecimentos em tecnologia da informação e redes de computadores, sistemas operacionais e infraestrutura de rede, atuante no setor de TI há mais de dez anos.}
+\vspace{\x pt}
+\vspace{-0.20 cm}
+\textbf{{Georgia Institute of Technology, USA} \hfill {\textbf{(2024-29)}}}\\
+\begin{tabular}{p{0.862\textwidth} r}
+     \textit{Docotor of Philosophy in Institute for Robotics and Intelligent Machines (IRIM)
+} & \textbf{GPA: 4.0/4.0}\\
+    %     \textbullet\ \textit{Minor in Systems and Control Engineering} (SysCon)& \textbf{GPA: 10.0/10 }\\
+    
+    %       \textbullet\ \textit{Minor in Machine Intelligence and Data Science} (C-MInDS)
+    % & \textbf{GPA: 10.0/10 }\\
+\end{tabular}\\
+\textbf{{Indian Institute of Technology Bombay} \hfill {\textbf{(2020-24)}}}\\
+\begin{tabular}{p{0.862\textwidth} r}
+     \textit{Bachelor of Technology in Electrical Engineering with Honors} &  \textbf{GPA: 9.91/10}\\
+    %     \textbullet\ \textit{Minor in Systems and Control Engineering} (SysCon)& \textbf{GPA: 10.0/10 }\\
+    
+    %       \textbullet\ \textit{Minor in Machine Intelligence and Data Science} (C-MInDS)
+    % & \textbf{GPA: 10.0/10 }\\
+\end{tabular}
+\\
+% \textit{Bachelor of Technology in Electrical Engineering;} \textbf{GPA: 9.89/10} 
+% \begin{itemize}
+%     \item \textit{Minor in Systems and Control Engineering;} \textbf{GPA: 10/10 }
+%     \item \textit{Minor in Machine Intelligence and Data Science (C-MInDS);} \textbf{GPA: 10/10}
+% \end{itemize}
+\vspace{-\shorter pt}
+% \section{Admissions Offered for Fall 2024 }
+% \begin{itemize}
+%     \item \textbf{Stanford University's}  Department of Aeronautics and Astronautics \hfill Master of Science (MS) degree
+%           \item \textbf{Georgia Tech's} Robotics (Electrical \& Computer Engineering) program \hfill Doctorate (PhD) degree
+%         \item \textbf{UIUC's} Department of Electrical \& Computer Engineering \hfill Doctorate (PhD) degree
+%         \item Waitlisted at \textbf{MIT's} Department of Aeronautics \& Astronautics \hfill MS-to-PhD degree
+          
+%         \item Waitlisted at \textbf{UCLA's} Department of Electrical \& Computer Engineering \hfill Doctorate (PhD) degree
+% \end{itemize}
+% \vspace{-\shorter pt}
+\vspace{-0.20 cm}
+\section{Research Interests}
+
+% My research interests lie in \textbf{Control and Robotics}. Particularly, I enjoy optimal control, geometric control, state estimation, convex optimization, system identification, and reinforcement learning.
+
+% \textbf{Control and Robotics -} Optimal Control, Differential Geometry, State Estimation, Convex Optimization, System Identification, and Reinforcement Learning. Optimal \& Stochastic Control, Convex Optimization, Adaptive Control
+\begin{itemize}
+    %\item \textbf{Theory -} Optimal, Stochastic, Adaptive, \& Geometric Control, State Estimation, Reinforcement Learning
+    %\item \textbf{Applications -} Autonomous Systems, Multi-agent Systems, Decentralized Systems, Hybrid Systems
+    %State Estimation, System Identification, Localization, Reinforcement Learning
+    %\item \textbf{Applications -} Multiagent systems, Decentralized Systems, Stochastic Systems
+    \item \textbf{Theory}- Geometric and Learning-based Control, State Estimation, Stochastic and Distributed optimization
+    \item \textbf{Applications}- Robotics, Power Systems, Decentralized systems, Autonomous vehicles, Cyber-Physical Systems
+    % \item Optimization- Stochastic, Distributed,
+    % \item Applied mathematics- Differential Geometry, 
+    % \item Geometric Control, State Estimation, Mulriagent control
+    % \item Applications in control of mobile robots
+\end{itemize}
+\vspace{-0.25 cm}
+%, differential geometry, geometric mechanics, variational calculus
+\section{Academic Achievements and Honors}
+
+\begin{itemize}
+    \item Honored with the \textbf{Institute Silver Medal} for achieving Rank 1 in the Department of Electrical Engineering \hfill (2024)
+    % \item Honored with \textbf{Ranked 1} in the Department of Electrical Engineering amongst \textbf{203} students \hfill (2024)
+    \item Awarded \textbf{Prof. K. C. Mukherjee Award} for the best undergraduate thesis in the department \hfill (2024)
+    \item {Awarded \textbf{Institute Academic Award} for \textbf{3 years} for exceptional academic performance \hfill{{(2020-'22)}}} 
+\item Conferred with All-India Rank \textbf{280} out of 250,000 participants in \textbf{JEE (Advanced) 2020} \hfill (2020)
+\item Awarded \textbf{5 AP grades (Course Topper)} in different {Electrical Engineering and SysCon courses} \hfill (2021-'23)
+\item Recipient of MITACS GRI and DAAD-WISE scholarship to pursue research in Canada and Germany\hfill (2023)
+\end{itemize}
+
+
+
+%\textbf{3)} {\textbf{Honda YES Award:} given to \textbf{14} students countrywide, for innovative ideas in ecotechnology \hfill{{[2022]}} } 
+% that encourages ecotechnology}
+
+
+%\section{Publications}
+%\textbf{Hiya Gada}, Pieter van Goor, Ravi N. Banavar, Robert Mahony, \textbf{"Equivariant Filters are Equivariant"}, \textit{12th IFAC Symposium on Nonlinear Control Systems (NOLCOS 2022)} (\link[arxiv link]{https://arxiv.org/abs/2210.13728})
+%\vspace{\y pt}
+%
+%\textbf{Hiya Gada}, Radhika Bhatt, Rana Adhikari, Chris Wipf, \textbf{"Fisher Information Analysis for Emissivity Estimation"}, under review, \textit{Caltech Undergraduate Research Journal (CURJ)}  
+
+%\section{Publication}
+
+%\vspace{\x pt}
+
+%\begin{itemize}
+    %Ranade, A.R., \textbf{Dhananjay T.}, et al. \textbf{“Survey and Analysis of Payloads for Missions on PSLV’s Orbital Platform”}, manuscript accepted, 2021 AIAA SciTech Forum, Nashville, Tennessee
+%\end{itemize}
+\vspace{-0.25 cm}
+\section{Research Experience}
+\vspace{-3 pt}
+%\textcolor{mygray}{\textit{\textbf{Research Interests}: \\Geometric Mechanics, Optimal Control, Differential Geometry, Variational Calculus, State Estimation}}
+
+\vspace{\y pt}
+% %%%%%%%%%%%%%%%% TEMPLATE TO ADD POINTS %%%%%%%%%%%%%%%%%%%%
+% \textbf{X) PROJECT NAME}\hfill{\textbf{(DATE RANGE)}}
+
+% \textit{\textbf{Guide}: \link[GUIDE NAME]{LINK TO PROFILE}, AFFILIATION} 
+
+
+% \vspace{\x pt}
+% \textcolor{mygray}{
+% \underline{Aim:}
+% \textit{WHATS THE AIM}
+% }\vspace{\x pt}
+% \begin{itemize}
+%     \item ADD POINTS
+% \end{itemize}
+% \hrulefill{}
+% \vspace{\y pt}
+
+% %%%%%%%%%%%%%% TEMPLATE END %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\textbf{1) Learning Set Representation using Kernel Functions}\hfill{\textbf{(Jan '25 - Present)}}
+
+\textit{\textbf{Guide}: \link[Prof. Patricio Vela]{https://scholar.google.com/citations?user=qL6ycTgAAAAJ&hl=en}, Georgia Institute of Technology} 
+
+\vspace{\x pt}
+\textcolor{mygray}{
+\underline{Aim:}
+\textit{Generate a function whose level set gives a boundary between the given in- and out-samples using a linear optimizer.}
+}\vspace{\x pt}
+\begin{itemize}
+    \item Developed new theoretical guarantees for the \textbf{existence} of a solution for the hard-in and hard-out case.
+    \item Implemented an algorithm in C++ that computes the representation for \textbf{obstacle avoidance} in 11ms.
+    \item Extended the formulation to \textbf{SE(2) sets} and utilized for the representation of reachable poses for the end-effector.
+\end{itemize}
+\hrulefill{}
+\vspace{\y pt}
+
+
+\textbf{2) Consensus for Nonholonomic Multiagent System using Projected Gradients}\hfill{\textbf{(Dec '22 - '24)}}
+
+\textit{\textbf{Guide}: \link[Prof. Ravi N. Banavar]{https://www.sc.iitb.ac.in/~banavar/}, Systems and Control Engineering, IIT Bombay}
+
+
+\textcolor{mygray}{
+\underline{Aim:} \textit{%To design geometrical controllers for cons
+To extend geometric controllers for single agent to multiagent systems and achieve position-consensus}
+%develop a decentralized control algorithm for a set of agents with velocity-level constraints}
+%To find the reference origin on the SLAM manifold which gives the best error convergence, and give possible theoretical reasons why different origins to give different results
+}\vspace{\x pt}% The work is based on an already developed theoretical analysis of variational calculus and discrete geometric mechanics
+
+\begin{itemize}
+%\item Worked on developing thorough intuition for projected gradients PID controller for general nonholonomic systems
+%\item Analysed the symmetries in the system dynamics and developed intuition for projected gradients PID controller
+\item Designed appropriate \textbf{Morse function} to achieve \textbf{asymptotic convergence} to a position for a single agent %and formulated a Lyapunov-based stability proof for the proposed controller
+\item Utilized \textbf{switching control} to introduce time-varying and discontinuous feedback to achieve exponential convergence to a position for a nonholonomic agent in simulations
+\item Extended the controller for a \textbf{multi-agent} system, achieving \textbf{exponential position-consensus} 
+\end{itemize}
+
+
+\hrulefill{}
+\vspace{\y pt}
+
+\textbf{3) Safety Guarantees in Imitation Learning}\hfill{\textbf{(May '23 - '24)}}
+
+\textit{\textbf{Guide}: \link[Prof. Florian Shkurti]{https://www.cs.toronto.edu/~florian/}, Computer Science Department, University of Toronto, Canada} 
+
+\vspace{\x pt}
+
+\textcolor{mygray}{
+\underline{Aim:}
+\textit{To %use the concepts of Control Barrier Functions in a learning framework and 
+design an online filter for the control inputs to avoid unsafe states, which improves iteratively}
+}\vspace{\x pt}
+\begin{itemize}
+    \item Conducted extensive literature survey on \textbf{Lipchitz Neural Networks}, the use of Normalizing Flows to learn stochastic differential equations and design of \textbf{NN controllers} for linear systems using Linear Matrix Inequalities
+    \item Examined \textbf{subspace projection} techniques of learning dynamics to impose stability architecturally
+    \item Recreated the results of in-Distribution Barrier Function \textbf{(iDBF)} on a custom toy problem
+    \item Improved the safety framework of iDBF by generating contrastive distribution using \textbf{Normalizing Flows} 
+\end{itemize}
+
+\hrulefill{}
+\vspace{\y pt}
+
+\textbf{4) Bearing-based Formation Control for Obstacle Avoidance}\hfill{\textbf{(Jan '23 - May '23)}}
+
+\textit{\textbf{Guide}: \link[Prof. Dwaipayan Mukherjee]{https://www.ee.iitb.ac.in/web/people/dwaipayan-mukherjee/}, Electrical Engineering Department, IIT Bombay} 
+
+\vspace{\x pt}
+
+\textcolor{mygray}{
+\underline{Aim:}
+\textit{To design decentralized controllers for obstacle avoidance based on the measured bearing of the obstacles while retaining a desired formation.}% Bearings can be measured from camera-like sensors for efficient and cost-effective multi-agent coordination}
+}\vspace{\x pt}
+\begin{itemize}
+\item Studied state-of-art formation control algorithms under position, distance, and bearing-based measurements
+\item Learned about concepts of \textbf{bearing rigidity}, minimal rigidity, and \textbf{persistence} for formations
+\item Designed bearing-based \textbf{barrier functions} to develop controller filters after partitioning the regions
+\item Developed ideas of \textbf{smooth} ``AND" and ``OR" for combining different barrier functions
+\end{itemize}
+
+
+
+\textbf{5) Angular Momentum-based Steering Laws for Control of CMGs}\hfill{\textbf{(Dec '22 - May '23)}}
+
+\textit{\textbf{Guide}: \link[Dr. Abhilash Mony]{https://scholar.google.co.in/citations?user=iCrx3qEAAAAJ&hl=en}, Inertial Systems Unit, Indian Space Research Organisation (ISRO)} 
+
+\vspace{\x pt}
+
+\textcolor{mygray}{
+\underline{Aim:}
+\textit{To analyze existing angular momentum-based approaches for singularity avoidance of Control Moment Gyroscopes, which are observed when the space of torque inputs reduces dimensionally}
+}\vspace{\x pt}
+\begin{itemize}
+    \item Proposed a novel torque distribution function for \textbf{singularity evasion} after extensive literature review
+    \item Developed understanding of different techniques used for the control of Control Moment Gyroscopes
+    \item Examined \textbf{singularities} encountered due to alignment of CMGs and developed generalizations of new and old approaches in a common mathematical framework using geometrical insight
+    %\item Expressed new and old research work in a common mathematical framework leading to a novel torque distribution function
+\end{itemize}
+
+% \hrulefill{}
+% \vspace{\y pt}
+
+% \textbf{2) Discrete Filtering on Lie Groups for Visual SLAM}\hfill{\textbf{[Feb '21 - Present]}}
+
+% {\textit{\textbf{Guide}: \link[Prof. Ravi N. Banavar]{https://www.sc.iitb.ac.in/~banavar/}, Systems and Control Engineering, IIT Bombay} 
+% %\\ \textit{ \href{https://cecs.anu.edu.au/people/robert-mahony}{{Prof. Robert Mahony}} \& \textit{\href{https://cecs.anu.edu.au/people/pieter-van-goor}{{Pieter van Goor}}, Australian National University}}}
+
+% \vspace{\x pt}
+
+% \textcolor{mygray}{
+% \underline{Introduction:} %\textit{To understand the symmetry and kinematics of the VSLAM problem and find the optimal innovation/corrective terms for a discrete-time observer on a Lie Group that does not linearize the system}
+% \textit{To design a discrete-time observer for Lie group systems that does not linearize the system, find optimal innovation/corrective terms for the observer and understand the symmetry of the VSLAM problem}
+% %To find the optimal innovation term for a VSLAM observer design on a Lie Group. 
+% %In a neighbourhood of the state-space, there exists a diffeomorphic map to the Lie algebra.
+% %Thus, the system is not linearized and the Lie algebra vector space is exploited. 
+% %To understand the symmetry and kinematics of the VSLAM problem, and performing discrete-time optimal control on the VSLAM Lie Group using Pontryagin maximum principle
+% }\vspace{\x pt} %The work is done along two paths depending upon the mathematical model of the system ($\mathcal{A}_1$, $\mathcal{A}_2)$}}
+
+% \begin{itemize}
+
+% \item Analyzed a continuous time \textbf{non-linear equivariant} geometric VSLAM observer with a \textbf{low computation} cost \vspace{\x pt}
+
+% %\item Mapped the system to a novel symmetry Lie group \textbf{VSLAM$_n(3)$} on which system output is equivariant 
+
+% %\item  Reviewed the continuous time innovation terms which give \textbf{almost semi-globally asymptotically stable} error dynamics with persistent excitation condition via \textbf{Lyapunov function} analysis \vspace{\x pt}
+
+% \item Formulated a discrete version of the observer on the system Lie group using an \textbf{optimal control} framework
+
+% %\item Transformed the problem to Euclidean space using the diffeomorphic property of exponential maps on a neighbourhood in the system's Lie algebra
+% \item Transformed system to \textbf{Euclidean space} using inverse exponential map to represent the Lie group in Lie algebra
+% %to parameterize group by Lie algebraic elements 
+% %and distilling a \textbf{vector space structure} to the observer problem
+% %and transform the problem to Euclidean space
+
+% %the problem to Euclidean space by parametrizing Lie group elements in terms of Lie algebraic elements
+% %The exponential map in a neighbourhood is crucial in defining the local parametrization of the Lie group SO(3) in terms of Lie algebraic elements, thus distilling a vector space structure to the discrete-time optimal control problem defined on the Lie group SO(3)
+
+% \item Using the \textbf{Pontryagin Maximum Principle} to derive optimal innovation terms for a discrete-time observer that preserves the system's non-linear manifold structure and facilitates numerical computation
+% %\item the previous problme is now being extended to a discrete optimal observer framework based on earlier ideas (karamvir) presented for control of systems on matrix lie groups
+% %\item  Utlizing the \textbf{Pontryagin maximum principle} for discrete optimal control on \textbf{VSLAM$_n(3)$} Lie group
+
+% % discrete-time models that are accurate and preserve the non-flat manifold structures of the underlying continuous-time controlled systems
+% \end{itemize}
+
+
+% \hrulefill{}
+% \vspace{\y pt}
+
+
+% \textbf{3) Fisher Information Analysis for Emissivity Estimation}\hfill{\textbf{[Apr '22 - Aug '22]}}
+
+% {\textit{\textbf{Guide}: \link[{{Prof. Rana Adhikari}}]{https://caltechexperimentalgravity.github.io/cv.html}, \link[{{Radhika Bhatt}}]{https://pma.caltech.edu/people/radhika-bhatt}, \link[{{Chris Wipf}}]{https://directory.caltech.edu/personnel/wipf}, California Institute of Technology}}
+
+
+
+% \vspace{\x pt}
+% \textcolor{mygray}{\underline{Introduction:} \textit{To perform optimal system identification and estimate material emissivities to find the coating that would be used for the cryogenically cooled suspended mirrors in the LIGO Voyager upgrade}}\vspace{\x pt}
+
+% \begin{itemize}
+% \item %Analysed system in frequency domain to find \textbf{optimal heat input} that gives least estimate uncertainty
+% Analyzed frequency domain of linearized system to find \textbf{optimal frequencies} of control heat input that give least uncertainty in emissivity estimate while assuming white noise in the system
+% \item %Optimized \textbf{Fisher Information Matrix} over a range of frequencies to find shortest experiment run-time
+% Maximized \textbf{Fisher Matrix} as a measure of certainty over a range of frequencies and design parameters
+% \item Implemented \textbf{power spectrum optimization} to get input power distribution over a frequency range
+% \end{itemize}
+% %\hrulefill{}
+% %\vspace{\y pt}
+
+% % \textbf{4) Topology Optimization of Structures for Vibration Isolation}\hfill{\textbf{[Sep '20 - July '21]}}
+
+% % {\textit{\textbf{Guide}: \href{http://www.amuthanar.com/}{{Prof. Amuthan A. Ramabathiran}}, Aerospace Engineering, IIT Bombay}}
+
+% % \vspace{\x pt}
+
+% % \textcolor{mygray}{\underline{Introduction:} \textit{To optimize the structural topology of a body, using Finite Element Method, to reduce its natural frequency and thus reduce the propagation of ground vibrations to the mass mounted on it}}\vspace{\x pt} %The work is done along two paths depending upon the mathematical model of the system ($\mathcal{A}_1$, $\mathcal{A}_2)$}}
+
+% % \begin{itemize}
+
+% % \item  Executed numerical methods for PDEs like \textbf{Finite Difference} \& \textbf{Finite Element Method} in \textbf{FEniCS}
+% % \item  Performed \textbf{adjoint-based shape optimization} on membrane thickness under various load conditions
+% % \item Minimized natural frequency by implementing a density based solver on structure's eigen-value problem
+% % %Implemented a density based solver on \textbf{eigen-value problem} to minimise a structure's \textbf{natural frequency}, 
+% % %to reduce the effect of \textbf{stochastic noise} from ground
+% % \end{itemize}
+% % \vspace{\y pt}
+% % \hrulefill{}
+% %\vspace{2 pt}
+
+% \textbf{4) Control for LIGO-India Seismic Isolators} \hfill{\textbf{[Jul '21 - Mar '22]}} \\ 
+% {\textit{Guide: \link[{{Dr. Suresh Doravari}}]{https://in.linkedin.com/in/suresh-doravari-88b6569}, Inter-University Centre for Astronomy and Astrophysics, India }} 
+
+% \vspace{\x pt}
+
+% \textcolor{mygray}{\underline{Introduction:} \textit{To isolate LIGO's sensitive optics from ground noise and enable gravitational wave detection}}\vspace{\x pt}
+
+% \begin{itemize}
+
+% \item Modelled the flexibility and energy loss of an \textbf{inverted pendulum} based seismic isolator and a \textbf{folded pendulum} based seismometer using \textbf{Lagrangian Mechanics} for LIGO-India's optical table \vspace{\x pt}
+% \item Improved centre of percussion effect and isolation of LIGO's optics at high frequencies through \textbf{passive control}
+% \item Designed and implemented a \textbf{Model Predictive Controller} for \textbf{active isolation} of the system
+% \end{itemize}
+
+\section{Selected Technical Projects}
+\vspace{\x pt}
+
+% \textbf{1) Modern Controls for LIGO-India Seismic Isolators} \hfill{\textbf{[July '21 - March '22]}} \\ 
+% {\textit{Guide: \href{https://in.linkedin.com/in/suresh-doravari-88b6569}{{Dr. Suresh Doravari}}, Inter-University Centre for Astronomy and Astrophysics, India }} 
+
+% \vspace{\x pt}
+
+% \textcolor{mygray}{\underline{Introduction:} \textit{To isolate the LIGO instrument from ground noise and enable gravitational wave detection}}\vspace{\x pt}
+
+% \begin{itemize}
+
+% \item Modelled the flexibility of the \textbf{inverted pendulum} Robert's Linkage based seismic isolator and the \textbf{folded pendulum} based seismometer using \textbf{Lagrangian Mechanics}\vspace{\x pt}
+% \item Improved centre of percussion effect and isolation at high frequencies through \textbf{passive control}
+% \item Designed and implemented a \textbf{Model Predictive Controller} for \textbf{active isolation} of the system
+% \end{itemize} 
+
+% \hrulefill{}
+% \vspace{\y pt}
+%%%%
+\textbf{1) Vision-Based Autonomous Maze Navigation}\hfill{\textbf{(Aug-Nov '24)}}
+
+\textit{\textbf{Guide}: \link[Dr. Sean Wilson]{https://scholar.google.com/citations?user=Bhz3UroAAAAJ&hl=en}, Georgia Institute of Technology} 
+
+\vspace{\x pt}
+\begin{itemize}
+    \item Implemented \textbf{image classification} pipeline for visual cues using OpenCV and CNN in PyTorch, achieving 92\% accuracy.
+    \item Architectured an hierarchical autonomous navigation system in ROS2 fusing measurements from \textbf{LIDAR} and camera.
+    \item Deployed the software stack on a \textbf{physical TurtleBot}, enabling autonomous maze solving with 100\% path efficiency.
+\end{itemize}
+\hrulefill{}
+\vspace{\y pt}
+
+
+\textbf{2) Gas Leakage Detection
+using Nanosaur and Jetson Nano (Best Project Award)} \hfill{\textbf{(Jan-Apr '23)}} \\ 
+{\textit{\textbf{Guide}: \link[Prof. Siddharth Tallur]{https://www.ee.iitb.ac.in/web/people/siddharth-tallur/}, Electrical Engineering Department, Mumbai}} 
+
+
+\begin{itemize}
+    \item Led a three-member team to ideate and implement modifications to a mobile robot by interfacing multiple \textbf{gas sensors} on a \textbf{custom PCB} and plotting real-time data on a remote device communicating via WiFi
+    \item Designed housing to enable secure mounting of IMX219-83 \textbf{stereo camera} and wheels to improve traction
+    \item Integrated VSLAM using ORBSLAM2 in the existing software framework to build a map of the surroundings
+\end{itemize} 
+
+\hrulefill{}
+\vspace{\y pt}
+
+
+
+%%%%
+\textbf{3) Guidance and Control Laws in Three Body Pursuit} \hfill \textbf{(May-Jul '22)}\\
+\textit{\textbf{Guide}: \link[Prof. Dwaipayan Mukherjee]{https://www.ee.iitb.ac.in/web/people/dwaipayan-mukherjee/}, Electrical Engineering Department, IIT Bombay} 
+
+\begin{itemize}
+    \item Developed strategies for an attacking missile to capture a target while evading a defender missile
+    \item Formulating the problem as a \textbf{safety-critical system} with the application of \textbf{Zeroing and Reciprocal Control Barrier functions} to guarantee safety from the defender
+    \item Developing new guidance law which maximizes performance and ensures safety using \textbf{quadratic programming} after analysis of existing and widely used laws for \textbf{missile guidance}
+\end{itemize}
+
+\hrulefill{}
+\vspace{\y pt}
+
+%%%%
+\textbf{4) Estimation on Lie groups} \hfill \textbf{(Jan-May '23)}\\
+\textit{\textbf{Guide}: \link[Prof. Ravi N. Banavar]{https://www.sc.iitb.ac.in/~banavar/}, Systems and Control Engineering, IIT Bombay}
+
+\begin{itemize}
+    \item Learned about the use of \textbf{equivariant filters} for highly nonlinear problems like Visual SLAM
+    \item Simulated and analysed \textbf{Kalman} filters and a \textbf{gradient-based} rotational estimator for a satellite
+\end{itemize}
+
+\hrulefill{}
+\vspace{\y pt}
+
+%%%%
+\textbf{5) Simulation and Stability Analysis of Spinning Rigid Bodies} \hfill \textbf{(Jan-Apr '22)}\\
+\textit{\textbf{Guide}: \link[Prof. Ravi N. Banavar]{https://www.sc.iitb.ac.in/~banavar/}, Systems and Control Engineering, IIT Bombay}
+
+\begin{itemize}
+    %\item Calculated the \textbf{Moment of Inertia tensor} for three bodies to demonstrate the initial conditions of the \textbf{Intermediate Axis theorem}
+    \item Demonstrated the stability and instability of the three equilibrium points associated with an asymmetrical body
+    \item Simulated 3D animation of the phenomenon of \textbf{unstable rotation} about the intermediate axis using Plotly
+    %\item Using the library \textbf{Plotly}, presented a 3D animation of the phenomena of  \textbf{unstable rotation} about the intermediate axis of rotation and compiled the methods and results in a report
+\end{itemize}
+\hrulefill{}
+\vspace{\y pt}
+
+
+\textbf{6) Control Systems Laboratory} \hfill{\textbf{(July-Nov '22)}} \\ 
+\textit{\textbf{Guide}: \link[Prof. Dwaipayan Mukherjee]{https://www.ee.iitb.ac.in/web/people/dwaipayan-mukherjee/}, Electrical Engineering Department, IIT Bombay} 
+
+
+\begin{itemize}
+    %\item Performed the stability analysis of the reactor model around the steady-state using negativity of eigenvalues of the \textbf{state space matrix} for different temperature feedback parameters
+    \item Designed a lead-lag compensator for active noise cancellation in a headphone after experimentally deriving the Bode plot
+    \item Achieved a 20dB attenuation at 100Hz with gain and phase margin of 10.2 dB and $50^o$ respectively
+    \item Engineered a PID controller for a line-following robot to cover a track with redundant turnings in 30 secs
+    \item Developed a set-point tracking controller for a DC motor, implementing feedback smoothening to enhance performance
+    
+%\item Utilized speech data from \textbf{3168} voice samples to predict gender with an accuracy of \textbf{98.58\%}
+\end{itemize} 
+\hrulefill{}
+
+\vspace{\y pt}
+%%%%
+\textbf{7) Music Genre Classification using Various Machine Learning} \hfill \textbf{(Mar-Apr '22)}\\
+\textit{Guide: \link[Prof. Biplab Banerjee]{https://biplab-banerjee.github.io/}, CMinDS, IIT Bombay}
+
+\begin{itemize}
+    \item Coordinated a \textbf{four-membered team} to use the feature extracted data for performing prediction using Decision Trees, Random Forests, Support Vector Machines, Naive Bayes, K-Nearest Neighbours
+    \item Fine-tuning \textbf{hyper-parameters} of the models to maximize test performance and maintain low variance and low bias and drafted a report recording all the observations and results
+\end{itemize}
+
+%\hrulefill{}
+
+\vspace{\y pt}
+\textbf{8) Stability Analysis of a Nuclear Reactor} \hfill{\textbf{(Nov-Dec '21)}} \\ 
+{\textit{\link[Nuclear Safety Analysis and Research Group]{https://www.aerb.gov.in/english/}, Atomic Energy Regulatory Board, Mumbai}} 
+
+
+\begin{itemize}
+    %\item Performed the stability analysis of the reactor model around the steady-state using negativity of eigenvalues of the \textbf{state space matrix} for different temperature feedback parameters
+    \item Computed the set of temperature feedback parameters required for stability of the state space model
+    \item Designed and tuned a PID controller for a linearized lumped reactor with a point reactor kinetic model
+%\item Utilized speech data from \textbf{3168} voice samples to predict gender with an accuracy of \textbf{98.58\%}
+\end{itemize} 
+% \hrulefill{}
+
+% \vspace{\y pt}
+% %%%%
+% \textbf{8) Design of a Multicycle and a Pipelined Processor} \hfill \textbf{(Apr-May '22)}\\
+% \textit{Guide: \link[Prof. Virendra Singh]{https://www.ee.iitb.ac.in/~viren/}, Electrical Engineering Department, IIT Bombay}
+
+% \begin{itemize}
+%     \item Designed a \textbf{Six-Stage Pipelined processor}, which was optimized for performance using \textbf{hazard mitigation} and  a Multi-cycle processor with a given \textbf{RISC ISA}
+%     \item Designed a \textbf{Lookup Table} for branch prediction and a \textbf{feed-forward} logic to increase the \textbf{throughput} of the pipelined processor for a wide variety of instruction combinations
+%     % \item Made the \textbf{Hardware Flow charts} and designed hardware to achieve the given operations
+%     \item Implemented the complete design of the two processors on \textbf{VHDL} using \textbf{Quartus Prime} and verified the performance for a complex set of instructions
+% \end{itemize}
+
+
+
+
+% %%%%
+
+% % \textbf{2) Markov Decision Process Solver for Anti-Tic-Tac-Toe Game} \hfill{\textbf{[Aug '21 -  Dec '21]}} \\ 
+% % {\textit{Guide: \link[{{Prof. Shivaram Kalyanakrishnan}}]{https://www.cse.iitb.ac.in/~shivaram/}, Computer Science and Engineering, IIT Bombay}} 
+
+% % \begin{itemize}
+
+% % \item Designed an MDP to find an \textbf{optimal policy} for a player with respect to a fixed opponent's policy
+% % \item Simulated the agorithm against itself to iteratively reach the best possible game strategy
+% % %Pitted the algorithm against itself to iteratively reach the best possible game strategy
+% % \end{itemize} 
+
+% % \hrulefill{}
+% % \vspace{\y pt}
+
+% % \textbf{3) Adaptive Control of Spacecraft Attitude} \hfill{\textbf{[Aug '21 - Dec '21]}} \\
+% % {\textit{Guide: \link[{{Prof. Sukumar Srikant}}]{https://www.sc.iitb.ac.in/~srikant/dokuwiki/doku.php}, Systems and Control Engineering, IIT Bombay}} 
+
+% % \vspace{\x pt}
+
+% % \begin{itemize}
+% %     \item Performed adaptive control for attitude tracking of spacecraft with three \textbf{Control Moment Gyroscopes}
+% %     \item Achieved \textbf{asymptotic stability} of system in presence of unknown parameters in moment of inertia
+% % \end{itemize}
+
+
+% % \hrulefill{}
+% % \vspace{\y pt}
+
+% % \textbf{4) Topology Optimization of Structures for Vibration Isolation}\hfill{\textbf{[Sep '20 - Jul '21]}}
+
+% % {\textit{\textbf{Guide}: \link[{{Prof. Amuthan A. Ramabathiran}}]{http://www.amuthanar.com/}, Aerospace Engineering, IIT Bombay}}
+
+% % \vspace{\x pt}
+
+% % % \textcolor{mygray}{\underline{Introduction:} \textit{To optimize the structural topology of a body, using Finite Element Method, to reduce its natural frequency and thus reduce the propagation of ground vibrations to the mass mounted on it}}\vspace{\x pt} %The work is done along two paths depending upon the mathematical model of the system ($\mathcal{A}_1$, $\mathcal{A}_2)$}}
+
+% % \begin{itemize}
+
+% % %\item  Performed \textbf{adjoint-based shape optimization} on membrane thickness under various load conditions
+% % \item Implemented \textbf{shape optimization} on membrane thickness to reduce material used without losing stiffness
+% % \item Performed \textbf{density-based optimization} on structure's topology to reduce seismic vibration propagation
+% % \item  Executed numerical methods for the PDEs like \textbf{Finite Difference} \& \textbf{Finite Element Method} in \textbf{FEniCS}
+
+% % %Minimized natural frequency by implementing a density based solver on structure's eigen-value problem
+% % %Implemented a density based solver on \textbf{eigen-value problem} to minimise a structure's \textbf{natural frequency}, 
+% % %to reduce the effect of \textbf{stochastic noise} from ground
+% % \end{itemize}
+
+% % \hrulefill{}
+% % \vspace{\y pt}
+
+% % \textbf{5) Multiproduct Warehouse Optimization} \hfill{\textbf{[Jan '22 - May '22]}} \\
+% % {\textit{Guide: \link[{{Prof. Avinash Bhardwaj}}]{https://scholar.google.co.in/citations?user=kbm_E6UAAAAJ&hl=en}, Mechanical Engineering, IIT Bombay}} 
+
+% % \vspace{\x pt}
+
+% % \begin{itemize}
+% %     \item Used \textbf{Economic Order Quantity} (EOQ) \& \textbf{Newsvendor model} to solve multiproduct limited storage problem
+% %     \item Analyzed the trade-off point and operation cost trends with warehouse storage and product perishability
+% % \end{itemize}
+
+
+% % % \textbf{3) Multiproduct Warehouse Optimization} \hfill{\textbf{[Jan '22 - May '22]}} \\
+% % % {\textit{Guide: \href{https://scholar.google.co.in/citations?user=kbm_E6UAAAAJ&hl=en}{{Prof. Avinash Bhardwaj}}, Mechanical Engineering, IIT Bombay}} 
+
+% % % \vspace{\x pt}
+
+% % % \begin{itemize}
+% % %     \item Used Economic Order Quantity \& Newsvendor model to solve multiproduct limited storage problem
+% % %     \item Analysed the trade-off point and operation cost trends with warehouse storage and product perishability
+% % % \end{itemize}
+
+
+% % % \hrulefill{}
+% % % \vspace{\y pt}
+
+% % % \textbf{4) AUVSI- International Aerial Robotics Competition} | \emph{Team AeRoVe, IIT Bombay}
+
+% % % \textcolor{mygray}{\textit{Part of a \textbf{50+} member student team developing state-of-the-art Unmanned Aerial \& Ground Vehicles}}
+
+% % % \vspace{\x pt}
+% % % \medskip
+% % % \textbf{Mission 9 Simulation Challenge 2020} | \emph{Mechanical Subsystem} \hfill{\textbf{[July '20 - Feb '21]}}
+% % % \vspace{\x pt}
+
+% % % \textcolor{mygray}{\textit{Declared {World Champions} among multiple teams around the world in \textbf{IARC Simulation Challenge}}}
+
+% % % \begin{itemize}
+% % %     \item Designed autonomous \textbf{mother-daughter drone system} with robotic arm for replacement maneuvers
+% % % %    \item Conceptualised the robotic arm to pull a magnetically attached \textbf{2kg} module from a \textbf{swaying} mast
+% % %     \item Equipped daughter drone with \textbf{3 DoF mechanism} to move gripper \& reduced its weight by \textbf{70\%}
+% % % \end{itemize}
+
+% % % \medskip
+% % % \vspace{\x pt}
+% % % \textbf{Mission 9 Hardware Challenge 2021} | \emph{Controls Subsystem} \hfill{\textbf{[Feb '21 - Aug '21]}} \vspace{-1.1 mm}
+
+% % % \begin{itemize} 
+% % %     \vspace{\x pt}
+% % %     \item Implemented \textbf{minimum snap trajectory} with \textbf{optimal time segments} for constrained environments
+% % %     \item Derived a linearized state space model for an independent \textbf{high-level PID and LQR controller}
+% % % \end{itemize}
+
+% % % \hrulefill{}
+% % % \vspace{\y pt}
+
+% % % \textbf{5) Barcelona Smart Drone Challenge} | \emph{Team AeRoVe, IITB Bombay} \hfill{\textbf{[Dec '19 - Apr '20]}}
+
+% % % \textcolor{mygray}{\textit{Developed a fixed wing UAV carrying payload, able to do autonomous navigation and character recognition}}
+
+% % % \vspace{\x pt}
+
+% % % \begin{itemize}
+% % %     \item Fabricated a \textbf{Flight Termination System}, that autonomously deploys a parachute during failure \vspace{\x pt}
+% % %     %\item Studied aerodynamics \& designed the most efficient low drag \textbf{elliptical wing} on \textbf{SolidWorks}
+% % %     \item Optimized the UAV design through \textbf{simulations} on \textbf{SimScale}  by analysing stress and lift characteristics
+% % %     %\item Successfully cleared the \textbf{Concept Review} and \textbf{Preliminary Design Review} stages of the competition
+% % % \end{itemize}
+
+% % \hrulefill{}
+% % \vspace{\y pt}
+
+
+% % % \textbf{6) Topology Optimization of Structures for Vibration Isolation}\hfill{\textbf{[Sep '20 - July '21]}}
+
+% % % {\textit{\textbf{Guide}: \href{http://www.amuthanar.com/}{{Prof. Amuthan A. Ramabathiran}}, Aerospace Engineering, IIT Bombay}}
+
+% % % \vspace{\x pt}
+
+% % % % \textcolor{mygray}{\underline{Introduction:} \textit{To optimize the structural topology of a body, using Finite Element Method, to reduce its natural frequency and thus reduce the propagation of ground vibrations to the mass mounted on it}}\vspace{\x pt} %The work is done along two paths depending upon the mathematical model of the system ($\mathcal{A}_1$, $\mathcal{A}_2)$}}
+
+% % % \begin{itemize}
+
+% % % \item  Executed numerical methods for PDEs like \textbf{Finite Difference} \& \textbf{Finite Element Method} in \textbf{FEniCS}
+% % % %\item  Performed \textbf{adjoint-based shape optimization} on membrane thickness under various load conditions
+% % % \item Performed \textbf{adjoint-based optimization} on material density to reduce seismic vibration propagation
+% % % %Minimized natural frequency by implementing a density based solver on structure's eigen-value problem
+% % % %Implemented a density based solver on \textbf{eigen-value problem} to minimise a structure's \textbf{natural frequency}, 
+% % % %to reduce the effect of \textbf{stochastic noise} from ground
+% % % \end{itemize}
+
+% % % \hrulefill{}
+% % % \vspace{\y pt}
+
+% % % \textbf{7) Multiproduct Warehouse Optimization} \hfill{\textbf{[Jan '22 - May '22]}} \\
+% % % {\textit{Guide: \href{https://scholar.google.co.in/citations?user=kbm_E6UAAAAJ&hl=en}{{Prof. Avinash Bhardwaj}}, Mechanical Engineering, IIT Bombay}} 
+
+% % % \vspace{\x pt}
+
+% % % \begin{itemize}
+% % %     \item Used Economic Order Quantity \& Newsvendor model to solve multiproduct limited storage problem
+% % %     \item Analysed the trade-off point and operation cost trends with warehouse storage and product perishability
+% % % \end{itemize}
+
+% % \textbf{6) Spaceflight Mechanics} \hfill{\textbf{[Apr '20 - Jun '20]}} \\
+% % {\textit{Summer of Science,  Math \& Physics Club, IIT Bombay}} 
+
+% % \vspace{\x pt}
+
+% % \begin{itemize}
+% %     \item Analyzed \textbf{satellite operations} like Hohmann transfer, inclination change maneuvers and rendezvous \vspace{\x pt}
+% %     \item Reviewed literature on \textbf{orbital motions} and \textbf{derived orbital equations} in classical orbital elements
+% %     \item Studied \textbf{3} models of ascent equations, the multi-stage and \textbf{optimal design methodology} for rockets
+% % \end{itemize}
+
+
+% % \section{Relevant Coursework \& Technical Skills} 
+
+% % \vspace{\x pt}
+% % \begin{tabular}{p{5cm} p{11.3cm}}
+% %     \textbf{Control \& Optimization} & 
+% %     Optimization, Adaptive Control, Linear and Nonlinear Systems Theory, \\ & Analytical and Geometric Dynamics, Signals and Feedback Systems \\
+% %     \textbf{Probability \& Learning} & Random Processes, Intelligent and Learning Agents, Machine Learning
+% %     \\
+% %     %\textbf{Mathematics} &  Numerical Analysis, Vector Calculus, Ordinary Differential Equations, Linear Algebra\\
+% %     %\\
+% %     %\textbf{Mechanics \& Engineering} & Fluid Mechanics, Solid Mechanics, Structure of Materials, Thermodynamics, Heat Transfer, Microprocessors and Automatic Control \\
+% %     %\\
+% %     %\textbf{Lab Courses} & Engineering Drawing, Physics Lab, Chemistry Lab, Fluid Mechanics Lab, Solids Lab, Manufacturing Practices Lab (Mechanical Workshop), Mechanical Measurements Lab, Manufacturing Processes Lab\\
+% %     %\\
+% %     \textbf{Mathematics} & Linear Algebra, Calculus, Numerical Analysis, Mathematics for Control\\
+% %     \textbf{Languages \& Tools} &  C++, Python, MATLAB, ROS, SolidWorks, SimScale, ANSYS, \LaTeX, Git \\
+% %     \textbf{Libraries \& Packages} & NumPy, Pandas, SciPy, Matplotlib, FEniCS, PyTorch
+% %     % Add programming and tools
+% % \end{tabular}
+
+
+% %\newpage
+
+% % \vspace{\y pt}
+%\newpage
+\section{Teaching \& Mentorship Experience}
+
+\vspace{\x pt}
+
+\textbf{1) Teaching Assistant} | \emph{Linear Algebra}\hfill{\textbf{(Jan-Apr '23)}}
+
+{\textit{\link[{Prof. Jugal K. Verma}]{https://www.math.iitb.ac.in/~jkv/}, Mathematics Department, IIT Bombay}}
+
+\vspace{\x pt}
+\begin{itemize}
+    \item Entrusted with the responsibility of conducting weekly tutorials for \textbf{35} first-year students
+    \item Primary duties include clearing student doubts, grading, and managing attendance 
+\end{itemize}
+
+\hrulefill{}
+\vspace{\y pt}
+
+\textbf{2) Education Outreach Volunteer} | \emph{\href{https://vidya-india.org/about-us/programs/mumbai/}{Vidya India} (Non-profit NGO)}\hfill{\textbf{(Nov '21 - Apr '22)}}
+
+\textcolor{mygray}{\textit{Organization committed to empowering underprivileged children, youth and women through holistic education}}
+
+\vspace{\x pt}
+\begin{itemize}
+    \item Conducted weekly interactive lectures for underprivileged high school students to make learning easy
+    %\item Fostered a conducive environment for learning
+    \item Mentored a high school student and helped design a suitable timetable to manage school exams
+    %Entrusted with responsibility of conducting weekly Engineering Drawing lab for \textbf{25} first-year students
+    %\item Primary duties include  MATLAB assignments and grading
+\end{itemize}
+
+\hrulefill{}
+\vspace{\y pt}
+
+\textbf{3) Projector Mentor} | \emph{Introduction to Machine Intelligence}\hfill{\textbf{(Apr - Jul '22)}}
+
+\textit{Summer of Code},  Web and Coding Club, IIT Bombay
+
+\vspace{\x pt}
+\begin{itemize}
+    \item Mentored a group of \textbf{10 students} to help them learn and build systems using Reinforcement Learning
+    \item Prepared and distributed \textbf{comprehensive resources} starting from the very basics to implementing \textbf{Deep Q Networks} and \textbf{Neural Networks} in Python
+    \item Designed a \textbf{Capstone project} to implement an environment and an agent that learns to act optimally using a model-free approach - \textbf{Q-Learning}
+\end{itemize}
+
+\hrulefill{}
+\vspace{\y pt}
+% \textbf{3) Teaching Assistant }| \emph{English Language Improvement Training}\hfill{\textbf{[Jun '21 - Jul '21]}}
+
+% \textcolor{mygray}{\textit{Selected on the basis of an interview involving personality assessment and a teaching demonstration}}
+
+% \vspace{\x pt}
+% \begin{itemize}
+%    \item Collaborated in a team of \textbf{13} to aid students develop soft skills \& enhance their english language proficiency
+%   \item Curated content and taught multiple classes of \textbf{50+ students} on various topics in \textbf{academic communication}
+% \end{itemize}
+
+% \hrulefill{}
+% \vspace{\y pt}
+
+\textbf{4) Student Mentor} | \emph{Department Academic Mentorship Program}\hfill{\textbf{(Jun '21 - '24)}}
+
+\textcolor{mygray}{\textit{Selected as a part of a 46-membered team out of 125+ applicants based on interviews and peer reviews}}
+
+\vspace{\x pt}
+
+\begin{itemize}
+   \item Mentored \textbf{6 sophomores} and helped them strike a balance between academics and extracurriculars 
+  \item Acting as the \textbf{first point of contact} in order to actively bridge the gap between faculty and students
+  \item Part of the Academic Rehabilitation Program, which aims to help students facing substantial academic difficulties
+  \item Improved the dissemination of knowledge about the department by \textbf{updating blogs \& course reviews}
+\end{itemize}
+
+% \hrulefill{} 
+
+% \vspace{\y pt}
+
+% \section{Leadership Experience}
+
+% \textbf{1) Coordinator} | \emph{Team AeRoVe, IIT Bombay} \hfill\textbf{[May '20 - Aug '21]}
+
+% \vspace{\x pt}
+
+% \begin{itemize}
+%     \item Coordinated a \textbf{3} phase recruitment process selecting candidates from \textbf{130+} undergraduate applicants
+% %	\item Mentoring a team of \textbf{6} new recruits for a \textbf{month long} project on design, controls and perception
+% 	\item Responsible for \textbf{non-core recruitment} for publicity, media, design, and marketing heads of the team
+% \end{itemize}
+
+% \hrulefill{} 
+
+% \vspace{\y pt}
+
+
+% \textbf{2) Music Festival Coordinator} | \emph{Mood Indigo, IIT Bombay} \hfill{\textbf{[May '20 - Jan '21]}
+
+% \textcolor{mygray}{\textit{50th edition of Asia’s \textbf{largest} college cultural festival | {146,000+ footfall} | {240+ events}}}
+
+% \vspace{\x pt}
+
+% \begin{itemize}
+%     \item Conceptualizing and organizing \textbf{Livewire} - a gig series for semi-professional bands in \textbf{10+ cities} of India  
+% 	\item Working in a team of 60, responsible for smooth execution of concerts attended by a crowd of \textbf{100K+}
+% \end{itemize}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \section{Key Courses} 
+
+% \vspace{\x pt}
+% \begin{tabular}{p{5cm} p{11.3cm}}
+%     \textbf{Control \& Optimization} & 
+%     Optimization, Adaptive Control, Linear and Nonlinear Systems Theory, \\ & Analytical and Geometric Dynamics, Signals and Feedback Systems \\
+%     \textbf{Probability \& Learning} & Random Processes, Intelligent and Learning Agents, Machine Learning
+%     \\
+%     %\textbf{Mathematics} &  Numerical Analysis, Vector Calculus, Ordinary Differential Equations, Linear Algebra\\
+%     %\\
+%     %\textbf{Mechanics \& Engineering} & Fluid Mechanics, Solid Mechanics, Structure of Materials, Thermodynamics, Heat Transfer, Microprocessors and Automatic Control \\
+%     %\\
+%     %\textbf{Lab Courses} & Engineering Drawing, Physics Lab, Chemistry Lab, Fluid Mechanics Lab, Solids Lab, Manufacturing Practices Lab (Mechanical Workshop), Mechanical Measurements Lab, Manufacturing Processes Lab\\
+%     %\\
+%     \textbf{Mathematics} & Linear Algebra, Calculus, Numerical Analysis, Mathematics for Control
+%     % Add programming and tools
+% \end{tabular}
+
+\vspace{\x pt}
+%\textcolor{mygray}{(\textit{* to be completed by Nov '21})}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+% \section{Technical Skills}
+
+% \begin{tabular}{p{5cm} p{11cm}}
+%     \textbf{Programming} &  C++, Python, MATLAB, ROS \\
+%     \textbf{Softwares and Tools} & SolidWorks, SimScale, ANSYS, Qiskit, \LaTeX, Git \\
+%     \textbf{Libraries and Packages} & Numpy, Pandas, SciPy, Matplotlib, FEniCS, PyTorch
+% \end{tabular}
+
+
+\section{Extracurricular Activities}
+
+% \textbf{1) Volunteer Work}
+\begin{itemize}
+\item Performed as \textbf{vocalist} and \textbf{guitarist} in multiple cultural events organised by the Music club of IIT Bombay
+\item Studied \textbf{Sanskrit} language for \textbf{5 years} as a subject in secondary school
+\item Active donor and volunteer in blood donation drives conducted at institute and local hospital
+\item Participated in Online Physics Olympiad 2020 with two other students with \textbf{World Rank 6} in the Open Round and \textbf{World Rank 8} in the Invitational Round
+\end{itemize}
+
+\section{Relevant Coursework \& Technical Skills} 
+
+\vspace{\x pt}
+\begin{tabular}{p{4.2cm} p{13.3cm}}
+    \textbf{Control Systems} & Linear and Nonlinear Dynamical Systems, Estimation on Lie Groups, Identification, Mathematics for Control, Analytical and Geometric Dynamics \\
+    \textbf{Mathematics} & Random Processes, Applied Linear Algebra, Calculus, Complex Analysis, Differential Equations, Game Theory \\
+    \textbf{Optimization \& Learning} & Stochastic \& Distributed Optimization, Intelligent and Learning Agents, Machine Learning\\
+    \textbf{Electrical Engineering} & Digital Systems, Signal Processing, Power Engineering, Analog Circuits, Microprocessors, Electronic Devices \& Circuits, Error Correcting Codes, EM Waves\\
+    %\textbf{Mathematics} &  Numerical Analysis, Vector Calculus, Ordinary Differential Equations, Linear Algebra\\
+    %\\
+    %\textbf{Mechanics \& Engineering} & Fluid Mechanics, Solid Mechanics, Structure of Materials, Thermodynamics, Heat Transfer, Microprocessors and Automatic Control \\
+    %\\
+    %\textbf{Lab Courses} & Engineering Drawing, Physics Lab, Chemistry Lab, Fluid Mechanics Lab, Solids Lab, Manufacturing Practices Lab (Mechanical Workshop), Mechanical Measurements Lab, Manufacturing Processes Lab\\
+    %\\
+    %\textbf{Mathematics} & Linear Algebra, Calculus, Numerical Analysis, Mathematics for Control\\
+    \textbf{Languages \& Tools} &  C++, Python, MATLAB, ROS, \LaTeX, Git, CUDA, Assembly, SolidWorks\\
+    \textbf{Libraries \& Packages} & NumPy, Pandas, SciPy, Matplotlib, PyTorch, OpenCV
+    % Add programming and tools
+\end{tabular}
+
+% \section{References} 
+
+% \vspace{-10 pt}
+% \setlength{\columnsep}{0.8cm}
+% \begin{multicols}{3}
+% \centering
+% \textbf{Prof.\ Ravi N. Banavar}\\
+%     B.Tech. Project Advisor,\\
+%     Systems and Control Engineering \\ Department, \\
+%     IIT Bombay, India\\
+%     {\color{blue}{\footnotesize{\faEnvelope}}}\ \href{mailto:banavar@iitb.ac.in}{banavar@iitb.ac.in}
+% \vfill\columnbreak
+% \centering
+%     \textbf{Prof.\ Dwaipayan Mukherjee}\\
+%     RnD Project Guide,\\
+%     Department of Electrical\\ Engineering,\\
+%     IIT Bombay, India.\\
+%     {\color{blue}{\footnotesize{\faEnvelope}}}\ \href{mailto:dm@ee.iitb.ac.in}{dm@ee.iitb.ac.in}
+%     \vfill\columnbreak
+% \centering
+%     \textbf{Prof.\ Florian Shkurti}\\
+%     Summer Research\\ Internship Guide,\\
+%     Department of Computer Science,\\
+%     University of Toronto, Canada. \\
+%     {\color{blue}{\footnotesize{\faEnvelope}}}\ \href{mailto:florian@cs.toronto.edu}{florian@cs.toronto.edu.ca}
+
+% \end{multicols}
+
+% \section{Relevant Coursework \& Technical Skills} 
+
+% \vspace{\x pt}
+% \begin{tabular}{p{5cm} p{11.3cm}}
+%     \textbf{Control \& Optimization} & 
+%     Optimization, Adaptive Control, Linear and Nonlinear Systems Theory, \\ & Analytical and Geometric Dynamics, Signals and Feedback Systems \\
+%     \textbf{Probability \& Learning} & Random Processes, Intelligent and Learning Agents, Machine Learning
+%     \\
+%     %\textbf{Mathematics} &  Numerical Analysis, Vector Calculus, Ordinary Differential Equations, Linear Algebra\\
+%     %\\
+%     %\textbf{Mechanics \& Engineering} & Fluid Mechanics, Solid Mechanics, Structure of Materials, Thermodynamics, Heat Transfer, Microprocessors and Automatic Control \\
+%     %\\
+%     %\textbf{Lab Courses} & Engineering Drawing, Physics Lab, Chemistry Lab, Fluid Mechanics Lab, Solids Lab, Manufacturing Practices Lab (Mechanical Workshop), Mechanical Measurements Lab, Manufacturing Processes Lab\\
+%     %\\
+%     \textbf{Mathematics} & Linear Algebra, Calculus, Numerical Analysis, Mathematics for Control\\
+%     \textbf{Languages \& Tools} &  C++, Python, MATLAB, ROS, SolidWorks, SimScale, ANSYS, \LaTeX, Git \\
+%     \textbf{Libraries \& Packages} & NumPy, Pandas, SciPy, Matplotlib, FEniCS, PyTorch
+%     % Add programming and tools
+% \end{tabular}
+% \textbf{2) Music and Dance}
+% \begin{itemize}
+% \item Attained a \textbf{Sangit Navin Diploma} in Hindustani Classical Vocals from \emph{Sangit Mahabharati}  
+% \item Achieved \textbf{Sangeet Tirtha} (graduate degree) in Kathak after training for \textbf{12 years}
+% \item Completed Grade 6 and 2 of \textbf{Rock and Pop Guitar and Vocals} from \emph{Trinity College London}
+% \end{itemize}
+
+
+
+% \section{References}
+% \begin{center}
+% \begin{tabular}{ c c c }
+% \textbf{Prof. Ravi Banavar} \; & \textbf{Prof. Robert Mahony} \;& \textbf{Prof. Rana Adhikari} \\ 
+%  Systems and Control, IIT Bombay \;\;\;\; & Australian National University \;\;\;\; & California Institute of Technology \\ 
+%  Institute Chair Professor & Professor & Professor \\ 
+%  \link[webpage]{https://www.sc.iitb.ac.in/~banavar/} $\diamond$ \link[email]{banavar@iitb.ac.in} & \link[webpage]{https://cecc.anu.edu.au/people/robert-mahony} $\diamond$ \link[email]{robert.mahony@anu.edu.au} & \link[webpage]{https://caltechexperimentalgravity.github.io/cv.html} $\diamond$ \link[email]{rana@caltech.edu}
+% \end{tabular}
+% \end{center}
+% \begin{tabular}{p{8cm} p{8cm} p{8cm}}
+%     \textbf{Prof. Ravi Banavar} & \textbf{Prof. Robert Mahony} & \textbf{Prof. Rana Adhikari}\\
+%     {Systems and Control, IIT Bombay} & Australian National University & California Institute of Technology
+% \end{tabular}
+
+% \hrulefill{}
+% \vspace{\y pt}
+
+% \textbf{1) Topology Optimization of Structures for Vibration Isolation}\hfill{\textbf{[Sep '20 - July '21]}}
+
+% {\textit{\textbf{Guide}: \href{http://www.amuthanar.com/}{{Prof. Amuthan A. Ramabathiran}}, Aerospace Engineering, IIT Bombay}}
+
+% \vspace{\x pt}
+
+% % \textcolor{mygray}{\underline{Introduction:} \textit{To optimize the structural topology of a body, using Finite Element Method, to reduce its natural frequency and thus reduce the propagation of ground vibrations to the mass mounted on it}}\vspace{\x pt} %The work is done along two paths depending upon the mathematical model of the system ($\mathcal{A}_1$, $\mathcal{A}_2)$}}
+
+% \begin{itemize}
+
+% \item  Executed numerical methods for PDEs like \textbf{Finite Difference} \& \textbf{Finite Element Method} in \textbf{FEniCS}
+% %\item  Performed \textbf{adjoint-based shape optimization} on membrane thickness under various load conditions
+% \item Performed \textbf{adjoint-based optimization} on material density to reduce seismic vibration propagation
+% %Minimized natural frequency by implementing a density based solver on structure's eigen-value problem
+% %Implemented a density based solver on \textbf{eigen-value problem} to minimise a structure's \textbf{natural frequency}, 
+% %to reduce the effect of \textbf{stochastic noise} from ground
+% \end{itemize}
+
+% \hrulefill{}
+% \vspace{\y pt}
+
+% \textbf{2) Multiproduct Warehouse Optimization} \hfill{\textbf{[Jan '22 - May '22]}} \\
+% {\textit{Guide: \href{https://scholar.google.co.in/citations?user=kbm_E6UAAAAJ&hl=en}{{Prof. Avinash Bhardwaj}}, Mechanical Engineering, IIT Bombay}} 
+
+% \vspace{\x pt}
+
+% \begin{itemize}
+%     \item Used Economic Order Quantity \& Newsvendor model to solve multiproduct limited storage problem
+%     \item Analysed the trade-off point and operation cost trends with warehouse storage and product perishability
+% \end{itemize}
+
+% {\section{References}
+% \begin{center}
+% \begin{tabularx}{\textwidth}{ 
+%    >{\centering\arraybackslash}X 
+%    >{\centering\arraybackslash}X 
+%    >{\centering\arraybackslash}X}
+%     \textbf{Prof. Ravi Banavar} & \textbf{Prof. Robert Mahony} & \textbf{Prof. Rana Adhikari} \\
+%     Systems and Control, IIT Bombay & Australian National University & California Institute of Technology \\
+%     webpage , email & webpage , email & webpage , email
+% \end{tabularx}
+% \end{center}}
+% \begin{tabularx}{\textwidth}
+%     % Referee 1
+%     \begin{minipage}[t]{0.3\textwidth}
+%         \centering
+%         \onehalfspacing
+%         \textbf{Prof. Ravi Banavar}\\
+%         Bachelor's Thesis Guide, \\
+%         Systems \& Control Engineering\\
+%         IIT Bombay, India\\        \href{https://www.sc.iitb.ac.in/~srikant/dokuwiki/doku.php}{\faHome\IconSep sc.iitb.ac.in/\textasciitilde srikant}\\
+%         \href{mailto:srikant@sc.iitb.ac.in}{\faEnvelope\IconSep srikant@sc.iitb.ac.in}
+%     \end{minipage}
+%     &
+%     % Referee 2
+%     \begin{minipage}[t]{0.3\textwidth}
+%         \centering
+%         \onehalfspacing
+%         \textbf{Prof. Debasish Chatterjee}\\
+%         Dual Degree Project Guide, \\
+%         Systems \& Control Group\\
+%         IIT Bombay, India\\
+%         \href{https://www.sc.iitb.ac.in/~chatterjee/master/homepage/people.html}{\faHome\IconSep sc.iitb.ac.in/\textasciitilde chatterjee}\\
+%         \href{mailto:dchatter@iitb.ac.in}{\faEnvelope\IconSep dchatter@iitb.ac.in}
+%     \end{minipage}
+%     &
+%     % Referee 3
+%     \begin{minipage}[t]{0.34\textwidth}
+%         \centering
+%         \onehalfspacing
+%         \textbf{Prof. Varun Bhalerao}\\
+%         Faculty Mentor, Student Satellite Team, \\
+%         Department of Physics\\
+%         IIT Bombay, India\\
+%         \href{https://www.star-iitb.in/group/varun-bhalerao}{\faHome\IconSep star-iitb.in/group/varun-bhalerao/}\\
+%         \href{mailto:
+%         varunb@iitb.ac.in}{\faEnvelope\IconSep 
+%         varunb@iitb.ac.in}
+%     \end{minipage}
+% \end{tabularx}
+
+
+
+
+% \textbf{2) Music and Dance:}
+% \begin{itemize}
+% \item Attained a \textbf{Sangit Navin Diploma} in Hindustani Classical Vocals from \emph{Sangit Mahabharati}  
+% \item Achieved \textbf{Sangeet Tirtha} (graduate degree) in Kathak after training for \textbf{12 years}
+% \item Completed Grade 6 and 2 of \textbf{Rock and Pop Guitar and Vocals} from \emph{Trinity College London}
+% \end{itemize}
+
+
+% \textbf{3) Technical:}
+% \begin{itemize}
+% \item Devised the \textbf{controller} for a robot to travel in a maze for the \emph{Micromouse Techfest Competition}
+% %\item Completed \textbf{Aerial Robotics Workshop} and learned the models used for path planning of drones
+% \item Completed a course of \textbf{Path Planning Algorithm} at \textit{Decibel Labs} learning \textbf{algorithms like RRT*} 
+% \end{itemize}
+
+
+% \textbf{4) Miscellaneous:}
+% \begin{itemize}
+% \item \noindent Completed Nivel Elemental, Básico, and Intermedio from Academia de Español in \textbf{Spanish}
+% \item Certified as a \textbf{licensed Advanced Open Water Diver} from PADI in scuba-diving
+% %\item \noindent Completed Nivel Elemental, Básico, and Intermedio from Academia de Español in the \textbf{Spanish language}
+% %\hfill{\emph{(2017)}}
+% \end{itemize}
+
+
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+% \nocite{*}
+% \bibliographystyle{plain}
+% \bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+%-----       letter       ---------------------------------------------------------
+
+\end{document}
+
+
+%% end of file `template.tex'.
+
